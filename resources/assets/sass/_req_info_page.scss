@@ -1,0 +1,42 @@
+
+.request_info_page{
+
+  .subtext {
+    margin-bottom: 20px;
+  }
+
+  .form-inline .form-control{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-inline .half-size{
+
+    @media screen and (min-width: $break-medium)
+    {
+      width: 49.6%;
+    }
+  }
+
+  table{
+    width: 100%;
+
+    td{
+      padding: 10px;
+    }
+  }
+
+  ul{
+    li{
+      margin-bottom: 0px;
+      line-height: 20px;
+    }
+  }
+  .state-icon {
+    left: -5px;
+  }
+  .list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+  }
+}

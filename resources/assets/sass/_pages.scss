@@ -1,0 +1,44 @@
+
+.generic_page{
+
+  p{
+    margin-bottom: 25px !important;
+  }
+
+  h3{
+    font-family: $serif;
+    color: $glit_green;
+    font-size: 16px;
+  }
+
+  .subtext{
+    font-family: $serif;
+    color: $glit_green;
+    font-weight: bold;
+    font-size: 14px;
+    border-top: dotted thin $glit_green;
+    padding-top: 15px;
+    line-height: 24px;
+
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+  ol, ul{
+    li{
+      font-family: $serif;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.home_page{
+  .req_info_column {
+    padding: 15px;
+  }
+}
+

@@ -1,0 +1,135 @@
+.carousel-fade {
+
+  .carousel-indicators{
+    @media screen and (max-width: $break-small){
+      display: none;
+    }
+  }
+  .carousel-control{
+    @media screen and (max-width: $break-small){
+      display: none;
+    }
+  }
+
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      transition-property: opacity;
+      position: absolute;
+      width: 100%;
+
+      @media screen and (max-width: $break-small) {
+        background-position-x: 20% !important;
+      }
+      @media screen and (min-width: $break-small) {
+        background-position-x: 40% !important;
+      }
+
+      .text_box{
+        @media screen and (min-width: $break-small){
+          width: 600px;
+          display: block;
+          margin-top: 5%;
+          margin-left: 56%;
+        }
+        @media screen and (max-width: $break-small){
+          position: absolute;
+          margin-top: 237px;
+          padding: 20px;
+          text-align: center;
+          background-color: $glit_blue;
+        }
+
+        h2{
+          margin: 0px;
+          font-family: $condensed_sans_serif;
+          font-weight: bold;
+          color: #ffffff;
+          text-shadow: black 1px 1px;
+          font-size: 44px;
+
+          @media screen and (max-width: $break-large) {
+            font-size: 36px;
+            max-width: 400px;
+          }
+          @media screen and (max-width: $break-medium) {
+            font-size: 24px;
+            max-width: 335px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 20px;
+          }
+        }
+
+        p{
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: dotted thin $glit_green;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: dotted thin $glit_green;
+          font-family: $serif;
+          color: $glit_green;
+          font-size: 20px;
+          line-height: 35px;
+
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+          @media screen and (max-width: $break-large) {
+            font-size: 14px;
+            line-height: 26px;
+            max-width: 400px;
+          }
+          @media screen and (max-width: $break-medium) {
+            font-size: 12px;
+            line-height: 20px;
+            max-width: 335px;
+          }
+        }
+      }
+
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+.index_carousel,
+.index_carousel .carousel-inner,
+.index_carousel .carousel-inner .item {
+
+  @media screen and (max-width: $break-large) {
+    height: 390px;
+  }
+  @media screen and (max-width: $break-medium) {
+    height: 300px;
+  }
+
+  background-size: cover !important;
+  height: 554px;
+}
+
+.index_carousel .carousel-inner{
+  overflow: inherit;
+  position: inherit;
+}
+

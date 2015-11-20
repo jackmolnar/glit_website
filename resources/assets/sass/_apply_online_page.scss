@@ -1,0 +1,33 @@
+
+.apply_online_page{
+
+  .apply_info{
+    margin-bottom: 30px;
+    ul{
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .well{
+    input, select, textarea{
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      font-family: $serif;
+      color: $glit_blue;
+    }
+    h1{
+      font-family: $condensed_sans_serif;
+      margin-top: 5px;
+      font-weight: bold;
+      color: $glit_blue;
+    }
+    th{
+      font-family: $serif;
+      color: #666;
+      text-align: right;
+    }
+  }
+}

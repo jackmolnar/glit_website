@@ -1,0 +1,99 @@
+
+.footer{
+  background: linear-gradient(135deg, #6e2ba5 0%,#213b82 30%);
+  border-top: solid thick $glit_green;
+  border-bottom: solid thick $glit_green;
+  margin-top: 25px;
+  min-height: 200px;
+  padding-top: 25px;
+  padding-bottom: 45px;
+
+  .col-md-4{
+
+    @media screen and (min-width: $break-medium) {
+      min-height: 250px;
+      border-left: dotted $glit_green thin;
+      border-right: dotted $glit_green thin;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+  }
+
+
+  .nap{
+    font-family: $condensed_sans_serif;
+    color: $glit_green;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .accreditation{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border-top: dotted $glit_green thin;
+    border-bottom: dotted $glit_green thin;
+
+    @media screen and (max-width: $break-small) {
+      .accsc_logo img{
+        max-width: 190px;
+      }
+    }
+  }
+
+  .accsc_logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navigation{
+    padding-left: 0px;
+    margin-top: 15px;
+
+      li{
+        list-style: none;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 12px;
+
+        a{
+          color: white;
+        }
+        a:hover{
+          color: $glit_green;
+          text-decoration: underline;
+        }
+      }
+  }
+  
+  .social_icons{
+    width: 125px;
+    margin: auto;
+
+    .facebook{
+      background: url("../../resources/assets/images/social_icons.png") 0px 0px;
+      width: 50px;
+      height: 50px;
+      display: block;
+      float: left;
+      margin-right: 25px;
+    }
+    .facebook:hover{
+      background-position: 0px -50px;
+    }
+    .googleplus{
+      background: url("../../resources/assets/images/social_icons.png") -50px 0px;
+      width: 50px;
+      height: 50px;
+      display: block;
+      float: left;
+    }
+    .googleplus:hover{
+      background-position: -50px -50px;
+    }
+  }
+}

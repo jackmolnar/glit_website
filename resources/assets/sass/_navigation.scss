@@ -1,0 +1,147 @@
+
+.navbar{
+  height: 155px;
+  border: none;
+
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 0px;
+  }
+
+  .navbar-contact{
+
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+
+    h2{
+      font-family: $condensed_sans_serif;
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+  }
+
+  .navbar-brand{
+
+
+    height: 80px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+    background: url("../../resources/assets/images/great_lakes_logo.png") no-repeat;
+    width: 100%;
+    background-position: 50%;
+
+
+    @media screen and (min-width: $break-small) {
+      width: 202px;
+      background-position: inherit;
+      margin-left: 15px !important;
+    }
+  }
+
+  .navbar-collapse{
+    background-color: $glit_blue;
+    border-bottom: solid thick $glit_green;
+
+    .navbar-nav{
+
+      width: 755px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+
+      li{
+        a{
+          font-family: $condensed_sans_serif;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+          text-shadow: 2px 2px #333333;
+          transition: background-color .2s;
+        }
+        a:hover{
+          background-color: $glit_green;
+        }
+      }
+    }
+
+    .dropdown-menu{
+      background-color: $glit_green;
+      border: none;
+
+      li{
+        a{
+          font-family: $serif;
+          font-weight: normal;
+          text-shadow: none;
+          font-size: 14px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+      li:hover {
+        background-color: $glit_blue;
+        transition: background-color .1s;
+        a{
+          background-color: $glit_blue;
+        }
+      }
+
+    }
+
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+      background-color: $glit_green;
+      color: white;
+    }
+
+    .navbar-right{
+      margin-top: 50px;
+    }
+  }
+
+  .affix{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 3px 3px 30px #000000;
+  }
+
+  .mobile_buttons{
+
+    @media screen and (min-width: $break-small) {
+      display: none;
+    }
+
+    .btn{
+      background-color: $glit_blue;
+      color: #fff;
+      font-family: $condensed_sans_serif;
+      font-weight: bold;
+      border-color: #fff;
+      border-bottom: thick $glit_green solid;
+      text-shadow: 2px 2px #333333;
+    }
+
+    .dropdown-menu{
+      background-color: $glit_blue;
+      font-family: $serif;
+      width: 100%;
+      min-width: 200px;
+      border-radius: 0px;
+      margin: 0px;
+      top: 98%;
+
+      li{
+        a{
+          padding: 10px;
+          padding-left: 20px;
+          color: #fff;
+          text-shadow: 2px 2px #333333;
+        }
+        a:hover{
+          background-color: $glit_green;
+         }
+      }
+    }
+  }
+}
